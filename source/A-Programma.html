@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: rgb(55, 61, 68);">
+    <p></p>
+    <center><a href="index.html"><img src="Images/LOGO.png" style="border: 2px; border-radius: 15px; border-style: ridge; border-color: blue;"></a></center>
+    <p></p>
+
+    <center>
+    
+    <h1>Πρόγραμμα της A τάξης</h1>
+    
+    <!-- HTML markup for the image and button -->
+    <img id="image" src="Images/programma/A1.png" alt="Image 1" style="width: 40%; height: 50%; border: 1px; border-radius: 15px; border-style: ridge; border-color: aliceblue;">
+    <p></p>
+    <button onclick="changeImage()"><h2>Επόμενο</h2></button>
+    
+    <!-- JavaScript code for the image changer -->
+    <script>
+      // Get the image element
+      var image = document.getElementById('image');
+      
+      // Set the initial image filename and index
+      var images = ['Images/programma/A1.png', 'Images/programma/A2.png', 'Images/programma/A3.png', 'Images/programma/A4.png'];
+      var activeImage = 0;
+      
+      // Create a function to change the active image
+      function changeImage() {
+        // Increment the active image index
+        activeImage++;
+        
+        // Reset the active image index if it goes out of bounds
+        if (activeImage >= images.length) {
+          activeImage = 0;
+        }
+        
+        // Update the image source with the new filename
+        image.src = images[activeImage];
+      }
+    </script>
+    </center>
+
+
+</body>
