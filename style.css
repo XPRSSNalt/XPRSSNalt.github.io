@@ -1,7 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: rgb(55, 61, 68);
+    background-color: rgb(58, 57, 59); /* rgb(70, 19, 117)  */
+}
+
+table{
+    border: 2px; border-style:ridge; border-color:aliceblue; border-radius: 15px;
 }
 
 h1{
-    font-size: 69; color:aliceblue;
+    color:aliceblue
+}
+
+h3{
+    color:aliceblue
 }
